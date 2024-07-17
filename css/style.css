@@ -6,6 +6,10 @@
     BACKGROUND COLORS
 **********************/
 
+.bg-purple {
+    background-color: #181A27;
+}
+
 /********************* 
     TEXT
 **********************/
@@ -13,3 +17,49 @@
 /********************* 
     CONTAINERS
 **********************/
+
+main {
+    min-height: 750px;
+}
+
+.container {
+    min-height: 400px;
+    max-width: 700px !important;
+    position: relative;
+    padding: -40px;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#items {
+    width: 100%;
+    height: 100%;
+}
+
+.container #items img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.item {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
