@@ -23,10 +23,9 @@ main {
 }
 
 .container {
-    min-height: 400px;
-    max-width: 700px !important;
-    position: relative;
-    padding: -40px;
+    height: 750px;
+    width: 750px !important;
+    
 }
 
 .prev {
@@ -44,15 +43,20 @@ main {
 }
 
 #items {
-    width: 100%;
-    height: 100%;
+    height: 750px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .container #items img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid white;
+    margin-top: 250px;
 }
 
 .item {

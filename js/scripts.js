@@ -36,7 +36,7 @@ const nextButton = document.getElementById('next-button');
 nextButton.addEventListener('click',
     function() {
         if (activeItem < imageCarousel.length - 1) {
-            singleItem.classList.remove('active');
+            singleItem[activeItem].classList.remove('active');
 
             activeItem++;
 
@@ -48,7 +48,7 @@ nextButton.addEventListener('click',
 prevButton.addEventListener('click',
     function() {
         if (activeItem > 0) {
-            singleItem.classList.remove('active');
+            singleItem[activeItem].classList.remove('active');
 
             activeItem--;
 
