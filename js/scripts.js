@@ -93,7 +93,7 @@ imageButton.addEventListener('submit',
     </div>
     `
 
-console.log(items)
+    console.log(items)
   
     }
 )
