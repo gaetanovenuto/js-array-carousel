@@ -20,6 +20,7 @@
 
 main {
     min-height: 750px;
+    position: relative;
 }
 
 .container {
@@ -47,7 +48,7 @@ main {
     width: 750px;
     display: flex;
     align-items: center;
-    position: relative;
+    
 }
 
 .container #items img {

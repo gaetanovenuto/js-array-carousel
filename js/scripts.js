@@ -42,6 +42,14 @@ nextButton.addEventListener('click',
 
             singleItem[activeItem].classList.add('active');
         }
+
+        else if (activeItem == imageCarousel.length - 1) {
+            singleItem[activeItem].classList.remove('active');
+
+            activeItem = 0;
+
+            singleItem[activeItem].classList.add('active');
+        }
     }
 )
 
@@ -53,6 +61,14 @@ prevButton.addEventListener('click',
             activeItem--;
 
             singleItem[activeItem].classList.add('active');
+            }
+
+        else if (activeItem == 0) {
+            singleItem[activeItem].classList.remove('active');
+
+            activeItem = imageCarousel.length - 1;
+
+            singleItem[activeItem].classList.add('active');
         }
-    }
+        }
 )
