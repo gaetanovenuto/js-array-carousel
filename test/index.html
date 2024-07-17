@@ -19,43 +19,23 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/framework12col.css">
     </head>
-    <body class="bg-purple">
+    <body class="bg-primary">
 
         <!-- header -->
         <header class="text-white text-center fs-1 py-3">
                 <h1>
                     Carosello Mono Array
                 </h1>
-                <form class="box" id="imageUpload">
-                    <label for="newImage" class="text-white text-center py-3">Aggiungi una sesta immagine al carosello:</label>
+                <form class="box" id="imageUploadForm">
+                    <label for="newImage" class="text-white text-center py-3">Aggiungi immagine al carosello:</label>
                     <input type="file" id="newImage">
                     <button class="btn btn-light" id="imgButton" type="submit">Aggiungi immagine</button>
                 </form>
         </header>
         <!-- /header -->
 
-        <!-- main -->
-        <main class="d-flex justify-content-center align-items-start">
-            <div class="container">
-                <div class="prev">
-                    <button type="button" id="prev-button" class="btn fs-1">
-                        <i class="fa-solid fa-chevron-left text-white"></i>
-                    </button>
-                </div>
-                <div class="next">
-                    <button type="button" id="next-button" class="btn fs-1">
-                        <i class="fa-solid fa-chevron-right text-white"></i>
-                    </button>
-                </div>
-                <div id="items">
-
-                </div>
-            </div>
-        </main>
-        <!-- /main -->
-
         <!-- BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="./scripts.js"></script>
     </body>
 </html>

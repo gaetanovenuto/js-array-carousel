@@ -74,16 +74,27 @@ prevButton.addEventListener('click',
 )
 
 
-const imageButton = document.getElementById('imgButton');
+const imageButton = document.getElementById('imageUpload');
 
 imageButton.addEventListener('submit',
     function(event) {
-    event.preventDefault;
+    event.preventDefault();
 
-    const addFile = document.getElementById('addFile');
+    const newImage = document.getElementById('newImage').files[0];
 
-    imageCarousel.push(addFile);
-    console.log(addFile);
-}
+    let imageURL = URL.createObjectURL(newImage);
+    
+    imageCarousel.push(imageURL);
+    console.log(imageCarousel);
+
+    items.innerHTML += `
+    <div class="item">
+        <img src="${imageURL}">
+    </div>
+    `
+
+console.log(items)
+  
+    }
 )
 
