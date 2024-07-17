@@ -72,3 +72,18 @@ prevButton.addEventListener('click',
         }
         }
 )
+
+
+const imageButton = document.getElementById('imgButton');
+
+imageButton.addEventListener('submit',
+    function(event) {
+    event.preventDefault;
+
+    const addFile = document.getElementById('addFile');
+
+    imageCarousel.push(addFile);
+    console.log(addFile);
+}
+)
+

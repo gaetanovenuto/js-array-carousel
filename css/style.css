@@ -46,6 +46,7 @@ main {
 #items {
     height: 750px;
     width: 750px;
+    margin-top: 250px;    
     display: flex;
     align-items: center;
     
