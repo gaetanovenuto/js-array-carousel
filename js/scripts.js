@@ -35,12 +35,12 @@ const nextButton = document.getElementById('next-button');
 
 nextButton.addEventListener('click',
     function() {
-        if (activeItem < singleItem.length - 1) {
-            item.classList.remove('active');
+        if (activeItem < imageCarousel.length - 1) {
+            singleItem.classList.remove('active');
 
             activeItem++;
 
-            item[activeItem].classList.add('active');
+            singleItem[activeItem].classList.add('active');
         }
     }
 )
@@ -48,11 +48,11 @@ nextButton.addEventListener('click',
 prevButton.addEventListener('click',
     function() {
         if (activeItem > 0) {
-            item.classList.remove('active');
+            singleItem.classList.remove('active');
 
-            imageCarousel++;
+            activeItem--;
 
-            item[imageCarousel].classList.add('active');
+            singleItem[activeItem].classList.add('active');
         }
     }
 )
