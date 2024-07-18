@@ -133,3 +133,95 @@ imageButton.addEventListener('submit',
     }
 )
 
+thumbImg[0].addEventListener('click',
+    function() {
+        singleItem[1].classList.remove('active');
+        singleItem[2].classList.remove('active');
+        singleItem[3].classList.remove('active');
+        singleItem[4].classList.remove('active');
+
+        singleItem[0].classList.add('active');
+        
+        thumbImg[1].classList.remove('opacity-1');
+        thumbImg[2].classList.remove('opacity-1');
+        thumbImg[3].classList.remove('opacity-1');
+        thumbImg[4].classList.remove('opacity-1');
+
+        thumbImg[0].classList.add('opacity-1');
+    }
+)
+
+thumbImg[1].addEventListener('click',
+    function() {
+        singleItem[0].classList.remove('active');
+        singleItem[2].classList.remove('active');
+        singleItem[3].classList.remove('active');
+        singleItem[4].classList.remove('active');
+
+        singleItem[1].classList.add('active');
+        
+        thumbImg[0].classList.remove('opacity-1');
+        thumbImg[2].classList.remove('opacity-1');
+        thumbImg[3].classList.remove('opacity-1');
+        thumbImg[4].classList.remove('opacity-1');
+
+        thumbImg[1].classList.add('opacity-1');
+    }
+)
+
+thumbImg[2].addEventListener('click',
+    function() {
+        singleItem[0].classList.remove('active');
+        singleItem[1].classList.remove('active');
+        singleItem[3].classList.remove('active');
+        singleItem[4].classList.remove('active');
+        
+        singleItem[2].classList.add('active');
+        
+        thumbImg[0].classList.remove('opacity-1');
+        thumbImg[1].classList.remove('opacity-1');
+        thumbImg[3].classList.remove('opacity-1');
+        thumbImg[4].classList.remove('opacity-1');
+
+        thumbImg[2].classList.add('opacity-1');
+    }
+)
+
+thumbImg[3].addEventListener('click',
+    function() {
+        singleItem[0].classList.remove('active');
+        singleItem[1].classList.remove('active');
+        singleItem[2].classList.remove('active');
+        singleItem[4].classList.remove('active');
+
+        singleItem[3].classList.add('active');
+        
+        thumbImg[0].classList.remove('opacity-1');
+        thumbImg[1].classList.remove('opacity-1');
+        thumbImg[2].classList.remove('opacity-1');
+        thumbImg[4].classList.remove('opacity-1');
+
+        thumbImg[3].classList.add('opacity-1');
+    }
+)
+
+thumbImg[4].addEventListener('click',
+    function() {
+        singleItem[0].classList.remove('active');
+        singleItem[1].classList.remove('active');
+        singleItem[2].classList.remove('active');
+        singleItem[3].classList.remove('active');
+
+        singleItem[4].classList.add('active');
+        
+        thumbImg[0].classList.remove('opacity-1');
+        thumbImg[1].classList.remove('opacity-1');
+        thumbImg[2].classList.remove('opacity-1');
+        thumbImg[3].classList.remove('opacity-1');
+
+        thumbImg[4].classList.add('opacity-1');
+    }
+)
+
+
+
